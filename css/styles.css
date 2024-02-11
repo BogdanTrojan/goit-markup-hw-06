@@ -7,10 +7,6 @@ a{
 button {
     cursor: pointer;
   }
-  
-  img {
-    display: block;
-  } 
 body{
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -96,7 +92,7 @@ body{
     text-transform: capitalize;
     color: #2e2f42;
 }
-.link-team{
+.link-team-section{
     background-color: #FFFFFF;
 }
 .text-avatar{
@@ -162,7 +158,6 @@ body{
 .list-flooter{
     background-color: #2e2f42;
 }
-
-.link-menu{
-    
+.blok-contakt{
+    font-style: normal;
 }
