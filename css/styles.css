@@ -13,14 +13,14 @@ button {
   } 
 body{
     font-family: 'Roboto', sans-serif;
-    color: #2e2f42;;
+    color: #434455;
     background-color: #ffffff;
 }
 .logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
@@ -45,6 +45,7 @@ body{
 .contakt-link{
     font-size: 16px;
     line-height: 1.5;
+    font-size: 16px;
     letter-spacing: 0.02em;
     color: #434455;
 }
@@ -52,9 +53,12 @@ body{
 .contakt-link:focus{
     color: #404bbf;
 }
+hero{
+    background-color: #2e2f42;
+}
 order{
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
@@ -64,7 +68,12 @@ order{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    background-color: #4D5AE5;
     color: #ffffff;
+}
+.btn-order-service:hover,
+.btn-order-service:focus{
+   color: #404BBF;
 }
 .benefist-list{
     font-weight: 500;
@@ -80,8 +89,10 @@ order{
 }
 .list-team{
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
+    text-align: center;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 .text-avatar{
     font-size: 20px;
@@ -96,7 +107,9 @@ order{
 }
 .our-portfolio{
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
     letter-spacing: 0.02em;
 }
 .list-our-portfolio{
@@ -113,8 +126,9 @@ order{
 }
 .logo-flooter{
     font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
@@ -126,4 +140,17 @@ order{
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: #f4f4fd;
+}
+
+.link-team{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.list-link-team{
+    background-color: #F4F4FD;
+}
+.list-flooter{
+    background-color: #2e2f42;
 }
