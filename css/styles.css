@@ -1,0 +1,129 @@
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+  }
+  
+  img {
+    display: block;
+  } 
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #2e2f42;;
+    background-color: #ffffff;
+}
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+.text-web{
+     color: #2e2f42;
+}
+.link-menu{
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+     color: #2e2f42;
+}
+.link-menu.acktive{
+     color: #404bbf;
+}
+.link-menu:hover,
+.link-menu:focus{
+    color: #404bbf;
+}
+.contakt-link{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.contakt-link:hover,
+.contakt-link:focus{
+    color: #404bbf;
+}
+order{
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #ffffff;
+}
+.btn-order-service{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+.benefist-list{
+    font-weight: 500;
+    font-size: 20px;    
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.benefist-list-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.list-team{
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+}
+.text-avatar{
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.subtitle-avatar{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.our-portfolio{
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+}
+.list-our-portfolio{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.subtitle-our-portfolio{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.logo-flooter{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+.text-web-flooter{
+    color: #f4f4fd;
+}
+.abbreviation{
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+     color: #f4f4fd;
+}
