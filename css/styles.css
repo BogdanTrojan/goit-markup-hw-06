@@ -12,7 +12,7 @@ body{
     color: #434455;
     background-color: #ffffff;
 }
-.img{
+img{
     padding: 24px 0;
 }
 h1,
@@ -116,7 +116,6 @@ p {
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: #2e2f42;
-     padding: 24px 0;
 }
 .link-menu.acktive{
      color: #404bbf;
@@ -168,8 +167,6 @@ p {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-}
-.hero-btn-block{
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
