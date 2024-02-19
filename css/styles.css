@@ -290,6 +290,7 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 16px;
+    display: inline-block;
 }
 .text-web-flooter{
     color: #f4f4fd;
