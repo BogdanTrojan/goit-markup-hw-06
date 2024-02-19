@@ -267,19 +267,45 @@ p {
     text-align: center;
     text-transform: capitalize;
     letter-spacing: 0.02em;
+    margin-bottom: 72px;
 }
+.inem-our-img{
+    max-width: 360px;
+    margin-bottom: 32px;
+
+}
+.link-our-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.row {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+  }
 .list-our-portfolio{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    max-width: 360px;
+    margin-bottom: 8px;
+    text-align: start;
 }
 .subtitle-our-portfolio{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    max-width: 360px;
+    margin-bottom: 8px;
+    text-align: start;
+}
+.page-portfolio{
+    padding: 120px 0px;
 }
 .logo-flooter{
     color: #4d5ae5;
