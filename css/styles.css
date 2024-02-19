@@ -26,13 +26,12 @@ h5,
 h6{
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 p{
     margin: 0;
     padding: 0;   
 }
-h1 {
+.order{
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 56px;
@@ -41,7 +40,7 @@ h1 {
   letter-spacing: 0.02em;
 }
 
-h2 {
+.twy-hero{
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
@@ -50,7 +49,7 @@ h2 {
   font-family: Roboto;
 }
 
-h3 {
+.benefist-list{
   color: #2e2f42;
   font-size: 20px;
   font-style: normal;
@@ -59,7 +58,7 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-p {
+.benefist-list-text{
   color: #434455;
   font-size: 16px;
   font-weight: 400;
@@ -95,14 +94,14 @@ p {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: block;
 }
 .link-menu{
     padding: 24px 0;
+    display: block;
 }
 .blok-contakt{
     font-style: normal;
-    margin-right: auto;
+    margin-left: auto;
 }
 .logo{
     margin-right: 76px;
@@ -252,9 +251,6 @@ p {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   width: calc((100% - 72px) / 4);
 }
-.team-link-avatar{
-    margin-bottom: 32px;
-}
 .text-avatara{
     font-weight: 500;
     font-size:20px;
@@ -281,8 +277,6 @@ p {
 }
 .inem-our-img{
     max-width: 360px;
-    margin-bottom: 32px;
-
 }
 .link-our-portfolio{
     display: flex;
