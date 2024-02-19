@@ -167,6 +167,8 @@ p {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+}
+.hero-btn-block{
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
