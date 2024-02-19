@@ -116,6 +116,7 @@ p {
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: #2e2f42;
+     padding: 24px 0;
 }
 .link-menu.acktive{
      color: #404bbf;
