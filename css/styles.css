@@ -1,22 +1,6 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 ol,ul{
     list-style-type: none;
-    margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
 }
-img {
-    display: block;
-  }
 a{
     text-decoration: none;
 }
@@ -28,29 +12,86 @@ body{
     color: #434455;
     background-color: #ffffff;
 }
-.page-heder{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  font-family: Roboto;
+}
+
+h3 {
+  color: #2e2f42;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+p {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.page-header {
     border-bottom: 1px solid #e7e9fc;
-}
-.container{
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
+  }
 .one-container{
     display: flex;
     align-items: center;
-    width: 1158px;
-}
+}  
 .page-nav{
     display: flex;
     align-items: center;
-    padding-right: 300px;
 }
 .menu{
-     display: flex;  
-     gap: 40px; 
+    display: flex;
+    gap: 40px;
+}
+.list-menu{
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+}
+.blok-contakt{
+    font-style: normal;
+    margin-right: auto;
 }
 .logo{
     margin-right: 76px;
@@ -61,15 +102,11 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-right: 76px;
 }
 .text-web{
      color: #2e2f42;
 }
 .link-menu{
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
      font-weight: 500;
      font-size: 16px;
      line-height: 1.5;
@@ -83,81 +120,47 @@ body{
 .link-menu:focus{
     color: #404bbf;
 }
-.contakt{
-    display: flex;
-    gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px; 
-}
 .contakt-link{
-    display: block;
     font-size: 16px;
     line-height: 1.5;
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 24px 0;
+    display: block;
+    font-weight: 400;
 }
 .contakt-link:hover,
 .contakt-link:focus{
     color: #404bbf;
 }
-.hero-contaienr{
-    padding-top: 188px;
-    padding-bottom: 292px;
-    padding-left: 472px;
-    padding-right: 472px;
-    background-color: #2e2f42;;
+.contakt{
+    display: flex;
+    gap: 40px;
+}
+.hero{
+    background-color: #2e2f42 ;
 }
 .order{
-    margin-bottom: 48px;
-    max-width: 496px;
-    text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #ffffff;
 }
-.hero-btn-block{
-    display: block;
-    text-align: center;
-}
 .btn-order-service{
-    min-width: 169px;
-    height: 56px;
-    padding-left: 32px;
-    padding-right: 32px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
     color: #ffffff;
-    border: none;
 }
 .btn-order-service:hover,
 .btn-order-service:focus{
     background-color: #404BBF;
 }
-.twy-hero{
-    display: none
-}
-.link-our-advantages{
-    display: flex;
-    column-gap: 24px;
-}
-.list-our-advantages{
-    width: 264px;
-}
-.list-link-advantages{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
-}
 .benefist-list{
-    column-gap: 24px;
-    padding-bottom: 8px;
-    align-items: center;
     font-weight: 500;
     font-size: 20px;    
     line-height: 1.2;
@@ -170,17 +173,7 @@ body{
     letter-spacing: 0.02em;
     color: #434455;
 }
-.our-taem{
-    background: #f4f4fd;
-    min-height: 732px;
-}
-.section-link-list-team{
-    display: flex;
-    column-gap: 24px;
-}
 .list-team{
-    padding-top: 120px;
-    padding-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -190,12 +183,8 @@ body{
 }
 .link-team-section{
     background-color: #FFFFFF;
-    min-width: 264px;
 }
 .text-avatara{
-    padding-top: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
     font-weight: 500;
     font-size:20px;
     line-height: 1.2;
@@ -203,32 +192,17 @@ body{
     color: #2e2f42 ;
 }
 .subtitle-avatar{
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 32px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
 .our-portfolio{
-    padding-top: 120px;
-    padding-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
     letter-spacing: 0.02em;
-}
-.link-our-portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1128px;
-    column-gap: 24px;
-}
-.list-link-our-portfolio{
-    width: 360px;
-    padding-bottom: 48px;
 }
 .list-our-portfolio{
     font-weight: 500;
@@ -256,12 +230,6 @@ body{
     color: #f4f4fd;
 }
 .abbreviation{
-    width: 264px;
-    height: 72px;
-    padding-bottom: 100
-    
-    
-    px;
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: #f4f4fd;
@@ -275,12 +243,6 @@ body{
 }
 .list-flooter{
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-left: 156px;
-    
-}
-.blok-contakt{
-    font-style: normal;
 }
 .list-link-team{
     background-color: #F4F4FD;
