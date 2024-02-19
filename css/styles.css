@@ -59,7 +59,9 @@ p {
   margin: 0;
   padding: 0;
 }
-
+.img{
+    display: block;
+}
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -71,6 +73,7 @@ p {
 .one-container{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #e7e9fc 
 }  
 .page-nav{
     display: flex;
@@ -88,6 +91,7 @@ p {
     letter-spacing: 0.02em;
     padding: 24px 0;
     display: block;
+    padding: 24px 0
 }
 .blok-contakt{
     font-style: normal;
