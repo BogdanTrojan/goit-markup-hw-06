@@ -12,6 +12,9 @@ body{
     color: #434455;
     background-color: #ffffff;
 }
+.img{
+    padding: 24px 0;
+}
 h1,
 h2,
 h3,
@@ -59,9 +62,7 @@ p {
   margin: 0;
   padding: 0;
 }
-.img{
-    display: block;
-}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -73,7 +74,6 @@ p {
 .one-container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e7e9fc 
 }  
 .page-nav{
     display: flex;
@@ -91,7 +91,7 @@ p {
     letter-spacing: 0.02em;
     padding: 24px 0;
     display: block;
-    padding: 24px 0
+    padding: 24px 0;
 }
 .blok-contakt{
     font-style: normal;
@@ -208,8 +208,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    text-align: start;
-  margin-bottom: 8px;
+    
 }
 .benefist-list-text{
     font-size: 16px;
