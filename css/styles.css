@@ -13,7 +13,7 @@ body{
     background-color: #ffffff;
 }
 img{
-    padding: 24px 0;
+    display: block;
 }
 h1,
 h2,
@@ -194,12 +194,14 @@ p {
 }
 .our-advantages{
     padding: 120px 0;
-}
-.linr-our-agvantages{
     display: flex;
     gap: 24px;
 }
-.list-our-advantages{
+.linr-our-agvantages{
+    /* display: flex;
+    gap: 24px; */
+}
+.link-our-advantages{
     width: calc((100% - 72px) / 4);
 }
 .benefist-list{
@@ -215,6 +217,7 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 8px;
 }
 .list-team{
     font-size: 36px;
