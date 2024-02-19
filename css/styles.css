@@ -214,6 +214,10 @@ p {
     letter-spacing: 0.02em;
     color: #434455;
 }
+.list-link-team{
+    padding: 120px 0;
+    background: #f4f4fd;
+}
 .list-team{
     font-size: 36px;
     line-height: 1.11;
@@ -221,9 +225,25 @@ p {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+.section-link-list-team{
+    display: flex;
+    gap: 24px;
+}
+.row-team{
+    padding: 32px 0;
 }
 .link-team-section{
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4);
+}
+.team-link-avatar{
+    margin-bottom: 32px;
 }
 .text-avatara{
     font-weight: 500;
@@ -231,12 +251,15 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42 ;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .subtitle-avatar{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 .our-portfolio{
     font-size: 36px;
