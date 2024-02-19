@@ -282,21 +282,26 @@ p {
     color: #434455;
 }
 .logo-flooter{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
+    font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+    margin-bottom: 16px;
 }
 .text-web-flooter{
     color: #f4f4fd;
 }
 .abbreviation{
-     line-height: 1.5;
-     letter-spacing: 0.02em;
-     color: #f4f4fd;
+    color: #f4f4fd;
+    max-width: 264px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .link-team{
@@ -306,7 +311,9 @@ p {
     letter-spacing: 0.02em;
 }
 .list-flooter{
-    background-color: #2e2f42;
+    background: #2e2f42;
+     padding: 100px 0;
+
 }
 .list-link-team{
     background-color: #F4F4FD;
