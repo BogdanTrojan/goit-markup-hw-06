@@ -201,7 +201,7 @@ p {
     gap: 24px;
 }
 .list-our-advantages{
-    width: calc((100% - 72px) / 4); 
+    width: calc((100% - 72px) / 4);
 }
 .benefist-list{
     font-weight: 500;
