@@ -192,16 +192,11 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.our-advantages{
-    padding: 120px 0;
+.link-our-agvantages{
     display: flex;
     gap: 24px;
 }
-.linr-our-agvantages{
-    /* display: flex;
-    gap: 24px; */
-}
-.link-our-advantages{
+.list-our-advantages{
     width: calc((100% - 72px) / 4);
 }
 .benefist-list{
@@ -210,6 +205,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
     
 }
 .benefist-list-text{
@@ -217,7 +213,6 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-bottom: 8px;
 }
 .list-team{
     font-size: 36px;
