@@ -120,6 +120,7 @@ p{
     height: 4px;
     border-radius: 2px;
     background-color: #404bbf;
+    bottom: -1px; 
   }
 .logo{
     margin-right: 76px;
@@ -170,16 +171,15 @@ p{
 .hero{
     background: #2e2f42;
     padding: 188px 0;
-    background-image:  linear-gradient(
-        rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
+    background-image:  linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
     ),
-    url('../images/imgsection-min.png');
+    url('../images/bg.jpg');
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 .our-advantages{
     padding: 120px 0 ;
@@ -375,6 +375,8 @@ background: #fff;
   top: 0;
   left: 0;
   padding: 40px 32px;
+  font-size: 16px;
+  line-height: 1.5; 
   }
 .list-our-portfolio{
     font-weight: 500;
