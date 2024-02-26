@@ -447,6 +447,11 @@ background: #fff;
      padding: 100px 0;
 
 }
+.conainer-flooter{
+    display: flex;
+    align-items: baseline;
+
+}
 .list-link-team{
     background-color: #F4F4FD;
 }
@@ -478,7 +483,12 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
+margin-bottom: 16px;
+color: #fff;
+font-weight: 500;
 }
 .icons-flooter{
     display: flex;
+    gap: 16px;
+
 }
