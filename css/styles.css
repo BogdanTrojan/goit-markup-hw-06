@@ -652,6 +652,9 @@ p {
 .input-form-wrapper:focus + .svg-modal-icons {
   fill: #4d5ae5;
 }
+.form-subscribe {
+  gap: 24px;
+}
 .lable-form-wrapper {
   display: block;
   font-size: 12px;
