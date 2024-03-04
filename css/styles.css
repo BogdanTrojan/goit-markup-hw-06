@@ -656,10 +656,13 @@ p {
   margin-bottom: 4px;
 }
 .form-review-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .form-svg-werapper {
   position: relative;
+}
+.form-review-wrapper .textarea {
+  margin-bottom: 16px;
 }
 .svg-modal-icons {
   position: absolute;
@@ -678,6 +681,11 @@ p {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
 }
 .form-review-messang::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -687,6 +695,9 @@ p {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+.form-ceckbox-wrapper {
+  margin-bottom: 24px;
 }
 .href-form {
   line-height: 1.33333;
@@ -702,7 +713,7 @@ p {
 .decoration-checkbox {
   display: inline-flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -711,11 +722,15 @@ p {
   fill: transparent;
   margin-right: 8px;
   margin-bottom: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-checkbox-wrapper:checked + .lable-form-checkbox .decoration-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
   border-color: #404bbf;
+  border: none;
 }
 .input-checkbox-wrapper:focus + .lable-form-checkbox .decoration-checkbox {
   outline: 2px solid #4d5ae5;
@@ -727,7 +742,7 @@ p {
 .review-form-btn {
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
