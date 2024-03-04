@@ -511,7 +511,7 @@ p {
 .ligo-icon {
   fill: #f4f4fd;
 }
-.subscribe-list {
+/* .subscribe-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -560,6 +560,14 @@ p {
 .label-footer-btn:hover,
 .label-footer-btn:focus {
   background-color: #404bbf;
+} */
+.subscribe-flooter-paragraph {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  columns: #ffffff;
 }
 .backdrop {
   position: fixed;
@@ -661,7 +669,7 @@ p {
 .form-svg-werapper {
   position: relative;
 }
-.form-review-wrapper .textarea {
+.form-review-wrapper.textarea {
   margin-bottom: 16px;
 }
 .svg-modal-icons {
