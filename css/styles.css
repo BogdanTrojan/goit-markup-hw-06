@@ -609,11 +609,17 @@ p {
   stroke: rgba(0, 0, 0, 0.1);
   padding: 0;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-modal-btn:hover,
 .close-modal-btn:focus {
   background-color: #404bbf;
   fill: #ffffff;
+  border: none;
+}
+.close-icon-btn {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-modal {
   font-weight: 500;
@@ -650,7 +656,7 @@ p {
   margin-bottom: 4px;
 }
 .form-review-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .form-svg-werapper {
   position: relative;
@@ -672,7 +678,6 @@ p {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  margin-bottom: 16px;
 }
 .form-review-messang::placeholder {
   color: rgba(46, 47, 66, 0.4);
