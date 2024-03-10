@@ -285,5 +285,10 @@ p {
     gap: 40px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 /* ============ /mobil menu style =============*/
