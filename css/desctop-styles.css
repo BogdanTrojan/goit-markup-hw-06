@@ -239,7 +239,7 @@ p {
 .btn-order-service:focus {
   background-color: #404bbf;
 }
-.twy-hero {
+.twy-hero {.svg-section-advantages
   position: absolute;
   width: 1px;
   height: 1px;
@@ -319,7 +319,7 @@ p {
 .social-list-link:focus {
   background-color: #404bbf;
 }
-.logo-icon {
+close-modal-btn .logo-icon {
   fill: #f4f4fd;
 }
 .text-avatara {

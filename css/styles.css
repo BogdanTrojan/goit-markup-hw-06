@@ -245,17 +245,19 @@ p {
   .mobile-menu-container {
     position: relative;
   }
-
   .mobile-menu-close-btn {
-    position: absolute;
-    top: 20px;
-    right: 16px;
+    border-radius: 100%;
+    fill: #e7e9fc;
+    stroke-width: 1px;
+    stroke: #2e2f42;
 
-    background-color: transparent;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
     border: none;
     padding: 0;
     line-height: 0;
-    stroke: #ffffff;
   }
   .link-list-mobile-menu-contakt {
     font-weight: 500;
@@ -273,6 +275,9 @@ p {
   .mobile-menu-icons {
     display: flex;
   }
+  .mobile-menu-icons-svg {
+    padding-right: 40px;
+  }
   .list-mobile-menu-icons {
     align-items: center;
     display: flex;
@@ -282,7 +287,6 @@ p {
     background-color: #4d5ae5;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    gap: 40px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -290,5 +294,158 @@ p {
     display: none;
   }
 }
-
 /* ============ /mobil menu style =============*/
+/* ============ section effective style =============*/
+.hero {
+  background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/dark-bg.jpg");
+  max-width: 320px;
+  padding: 61px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.order {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 216px;
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.btn-order-service {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  gap: 10px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 72px;
+}
+.btn-order-service:hover,
+.btn-order-service:focus {
+  background-color: #404bbf;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/tablet-bg.jpg");
+    max-width: 768px;
+    padding: 126px 0;
+  }
+  .btn-order-service {
+    margin-top: 36px;
+  }
+  .order {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1157px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg.jpg");
+    max-width: 1157px;
+    padding: 126px 136px;
+  }
+  .btn-order-service {
+    margin-top: 36px;
+  }
+  .order {
+    max-width: 496px;
+  }
+}
+/* ============ /section effective style  =============*/
+/* ============ /section Our advantages style  =============*/
+.svg-section-advantages {
+  display: none;
+}
+.benefist-list {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.benefist-list-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.list-our-advantages {
+  padding-bottom: 72px;
+}
+.link-our-advantages {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+@media only screen and (min-width: 768px) {
+  .link-our-advantages {
+    /* display: flex; */
+  }
+  .list-our-advantages {
+  }
+}
+@media only screen and (min-width: 1157px) {
+  .svg-section-advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+  }
+  .list-our-advantages {
+    width: calc((100% - 72px) / 4);
+    margin-right: 24px;
+  }
+  .link-our-advantages {
+    display: flex;
+  }
+  .benefist-list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: left;
+  }
+  .benefist-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+}
+/* ============ /section Our advantages style  =============*/
