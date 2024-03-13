@@ -18,6 +18,8 @@ body {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 h1,
 h2,
@@ -531,6 +533,12 @@ p {
   }
   .inem-our-img {
     max-width: 356px;
+  }
+  .link-team-section {
+    max-width: 264px;
+  }
+  .section-link-list-team {
+    column-gap: 24px;
   }
 }
 @media only screen and (min-width: 1157px) {
@@ -1109,34 +1117,3 @@ p {
   }
 }
 /* ============ /mobil menu style =============*/
-
-border-radius: 100%;
-stroke: #e7e9fc;
-stroke-width: 1px;
-stroke: #2e2f42;
-width: 24px;
-height: 24px;
-
-position: absolute;
-top: 24px;
-right: 24px;
-
-border: none;
-padding: 0;
-line-height: 0;
-
-/* width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 24px;
-    border-radius: 50%;
-    border: none;
-    background-color: #e7e9fc;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
-    padding: 0; */
