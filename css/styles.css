@@ -47,7 +47,7 @@ p {
   overflow: hidden;
 }
 .container {
-  max-width: 288px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -55,16 +55,17 @@ p {
 }
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
   }
 }
-@media only screen and (min-width: 1157px) {
+@media only screen and (min-width: 1158px) {
   .container {
-    max-width: 1157px;
+    max-width: 1158px;
   }
 }
 /* ============ header style =============*/
 .logo {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -80,6 +81,9 @@ p {
 .text-web {
   color: #2e2f42;
 }
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .open-menu-btn {
   background-color: transparent;
   border: none;
@@ -94,7 +98,11 @@ p {
   .blok-contakt {
     display: none;
   }
-
+  .contakt {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
   .page-header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -112,6 +120,7 @@ p {
   .blok-contakt {
     display: flex;
   }
+
   .open-menu-btn {
     display: none;
   }
@@ -119,7 +128,9 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 590px;
+  }
+  .logo {
+    margin-right: 120px;
   }
   .menu {
     display: flex;
@@ -184,12 +195,13 @@ p {
     color: #404bbf;
   }
   .contakt-link {
-    font-size: 16px;
-    line-height: 1.5;
-    font-size: 16px;
-    letter-spacing: 0.02em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
     color: #434455;
-    padding: 24px 0;
+    display: block;
     font-weight: 400;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -198,13 +210,23 @@ p {
     color: #404bbf;
   }
   .contakt {
+    display: flex;
+    flex-direction: column;
     gap: 12px;
   }
 }
-@media only screen and (min-width: 1157px) {
+@media only screen and (min-width: 1158px) {
   .contakt {
     display: flex;
     gap: 40px;
+    flex-direction: row;
+  }
+  .contakt-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    display: block;
   }
 }
 /* ============ /header style =============*/
@@ -236,6 +258,7 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 72px;
 }
 .btn-order-service {
   display: block;
@@ -253,7 +276,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  margin-top: 72px;
 }
 .btn-order-service:hover,
 .btn-order-service:focus {
@@ -270,108 +292,94 @@ p {
     padding: 126px 0;
     margin-bottom: 0;
   }
-  .btn-order-service {
-    margin-top: 36px;
-  }
   .order {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     max-width: 500px;
+    margin-bottom: 36px;
   }
 }
 
-@media only screen and (min-width: 1157px) {
+@media only screen and (min-width: 1158px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/bg.jpg");
-    max-width: 1157px;
-    padding: 126px 136px;
+      url("../images/desctop-bg2x.jpg");
+    max-width: 1440px;
+    padding: 158px 0px;
   }
-  .btn-order-service {
-    margin-top: 36px;
+  .orer {
+    margin-bottom: 48px;
   }
   .order {
     max-width: 496px;
   }
 }
 /* ============ /section effective style  =============*/
+.our-advantages {
+  padding: 96px 0;
+}
 
-/* ============ /section Our advantages style  =============*/
+.link-our-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
 .svg-section-advantages {
   display: none;
 }
+
 .benefist-list {
   text-align: center;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+  margin-bottom: 8px;
 }
+
 .benefist-list-text {
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.list-our-advantages {
-  padding-bottom: 72px;
-}
-.link-our-advantages {
-  margin-top: 96px;
-  margin-bottom: 96px;
-}
+
 @media only screen and (min-width: 768px) {
-  .list-our-advantages {
-    width: calc((100% - 48px) / 2);
-  }
   .link-our-advantages {
-    gap: 24px;
-    row-gap: 72px;
-    flex-direction: row-reverse;
+    display: flexbox;
+    flex-direction: row;
     flex-wrap: wrap;
-    display: flex;
+    row-gap: 72px;
+    column-gap: 24px;
   }
+
+  .list-our-advantages {
+    max-width: 356px;
+  }
+
   .benefist-list {
-    text-align: left;
+    text-align: start;
   }
 }
-@media only screen and (min-width: 1157px) {
-  .svg-section-advantages {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    margin-bottom: 8px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-  }
+@media only screen and (min-width: 1158px) {
   .list-our-advantages {
     width: calc((100% - 72px) / 4);
-    margin-right: 24px;
   }
-  .link-our-advantages {
+
+  .svg-section-advantages {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    height: 112px;
   }
-  .benefist-list {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-align: left;
-  }
+
   .benefist-list-text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
   }
 }
 /* ============ /section Our advantages style  =============*/
@@ -394,7 +402,7 @@ p {
   margin-bottom: 72px;
 }
 .section-link-list-team {
-  gap: 24px;
+  row-gap: 72px;
 }
 .row-team {
   padding: 32px 0;
@@ -406,6 +414,10 @@ p {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   margin-bottom: 72px;
+  width: 264px;
+}
+.link-team-section :not(:last-of-type) {
+  margin-bottom: 0;
 }
 .list-ligo-icon {
   display: flex;
@@ -442,18 +454,25 @@ p {
   text-align: center;
   margin-bottom: 8px;
 }
+
 @media only screen and (min-width: 768px) {
   .section-link-list-team {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    column-gap: 64px;
+    column-gap: 24px;
+    row-gap: 64px;
     justify-content: center;
     align-items: center;
   }
+  .link-team-section {
+    margin-bottom: 0;
+  }
+  .link-team-section:not(:last-of-type) {
+    margin-bottom: 0;
+  }
 }
 
-@media only screen and (min-width: 1157px) {
+@media only screen and (min-width: 1158px) {
   .link-team-section {
     width: calc((100% - 72px) / 4);
   }
@@ -473,7 +492,6 @@ p {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
-  margin-top: 92px;
 }
 .our-portfolio-section {
   font-size: 36px;
@@ -525,7 +543,7 @@ p {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  width: 288px;
+  width: 356px;
 }
 @media only screen and (min-width: 768px) {
   .list-link-our-portfolio {
@@ -541,7 +559,7 @@ p {
     column-gap: 24px;
   }
 }
-@media only screen and (min-width: 1157px) {
+@media only screen and (min-width: 1158px) {
   .inem-our-img {
     max-width: 356px;
   }
@@ -612,12 +630,15 @@ p {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-  margin-top: 72px;
   text-align: center;
+}
+.footer-logo-text {
+  margin-bottom: 72px;
 }
 .icons-flooter {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 .social-icons-flooter-svg {
   width: 100%;
@@ -636,9 +657,9 @@ p {
 .ligo-icon {
   fill: #f4f4fd;
 }
+
 .subscribe-flooter-paragraph {
   margin-bottom: 16px;
-  margin-top: 72px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -650,7 +671,7 @@ p {
   gap: 24px;
 }
 .input-flooter-wrapper {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -680,7 +701,8 @@ p {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  margin-left: 24px;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 16px;
@@ -704,14 +726,14 @@ p {
 }
 .hero-list-flooter {
   text-align: center;
-  display: ruby;
+  margin-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
   .container.container-flooter {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    padding-left: 108px;
   }
   .hero-list-flooter {
     display: inline-block;
@@ -735,9 +757,10 @@ p {
     text-align: left;
   }
 }
-@media only screen and (min-width: 1157px) {
+@media only screen and (min-width: 1158px) {
   .footer-logo-text {
     margin-right: 120px;
+    margin-bottom: 0;
   }
   .form-subscribe {
     display: flex;
@@ -748,21 +771,22 @@ p {
   .container.container-flooter {
     align-items: baseline;
     flex-wrap: nowrap;
+    padding-left: 16px;
   }
   .subscribe-flooter-paragraph {
     text-align: left;
-    margin-left: 80px;
   }
   .label-footer-btn {
     margin-top: 0;
+  }
+  .subscribe-list {
+    margin-left: 80px;
   }
   .hero-list-flooter {
     text-align: left;
     display: block;
     margin-left: 0;
-  }
-  .form-subscribe {
-    margin-left: 80px;
+    margin-bottom: 0;
   }
   .text-flooter-icon {
     text-align: left;
@@ -811,7 +835,7 @@ p {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 }
 .close-modal-btn {
   width: 24px;
@@ -919,6 +943,25 @@ p {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
+}
+.decoration-checkbox {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-checkbox-wrapper {
   margin-bottom: 24px;
@@ -989,9 +1032,10 @@ p {
 @media only screen and (min-width: 786px) {
   .modal {
     width: 408px;
+    padding: 72px 24px 24px 24px;
   }
 }
-@media only screen and (min-width: 1156px) {
+@media only screen and (min-width: 1158px) {
   .subscribe-flooter-paragraph {
     margin-top: 0;
   }
@@ -999,6 +1043,7 @@ p {
 /* ============ /section backdrop style  =============*/
 
 /* ============ mobil menu style =============*/
+
 @media only screen and (max-width: 768px) {
   .mobile-menu {
     position: fixed;
@@ -1026,10 +1071,10 @@ p {
     color: #404bbf;
   }
   .mobile-nav-menu {
-    padding-top: 72px;
-    margin-bottom: 168px;
+    margin-bottom: auto;
   }
   .link-list-mobile-nav-menu {
+    font-family: "Roboto", sans-serif;
     color: #2e2f42;
   }
   .mobile-menu.is-open {
@@ -1039,6 +1084,11 @@ p {
 
   .mobile-menu-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 72px;
+    padding-bottom: 40px;
   }
   .close-icon-btn {
     fill: #2e2f42;
@@ -1073,6 +1123,14 @@ p {
   }
 
   .link-list-mobile-menu-contakt {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
