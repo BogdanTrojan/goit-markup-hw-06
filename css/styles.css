@@ -61,6 +61,7 @@ p {
 @media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding: 15px;
   }
 }
 /* ============ header style =============*/
@@ -240,12 +241,21 @@ p {
     ),
     url("../images/dark-bg.jpg");
   max-width: 320px;
-  padding: 61px 0;
+  padding: 72px 0;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/dark-bg@2x.jpg");
+  }
 }
 .order {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -289,7 +299,7 @@ p {
       ),
       url("../images/tablet-bg.jpg");
     max-width: 768px;
-    padding: 126px 0;
+    padding: 112px 0;
     margin-bottom: 0;
   }
   .order {
@@ -298,6 +308,15 @@ p {
     line-height: 1.07;
     max-width: 500px;
     margin-bottom: 36px;
+  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/tablet-bg@2x.jpg");
+    }
   }
 }
 
@@ -309,7 +328,16 @@ p {
       ),
       url("../images/desctop-bg2x.jpg");
     max-width: 1440px;
-    padding: 158px 0px;
+    padding: 188px 0px;
+  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/desctop-bg2x.jpg");
+    }
   }
   .orer {
     margin-bottom: 48px;
@@ -334,6 +362,12 @@ p {
 }
 
 .benefist-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
   text-align: center;
   margin-bottom: 8px;
 }
@@ -377,7 +411,11 @@ p {
     background: #f4f4fd;
     height: 112px;
   }
-
+  .benefist-list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
   .benefist-list-text {
     font-weight: 400;
   }
@@ -402,6 +440,8 @@ p {
   margin-bottom: 72px;
 }
 .section-link-list-team {
+  display: flex;
+  flex-wrap: wrap;
   row-gap: 72px;
 }
 .row-team {
@@ -413,11 +453,9 @@ p {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  margin-bottom: 72px;
   width: 264px;
-}
-.link-team-section :not(:last-of-type) {
-  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .list-ligo-icon {
   display: flex;
@@ -554,6 +592,8 @@ p {
   }
   .link-team-section {
     max-width: 264px;
+    margin-right: 0;
+    margin-left: 0;
   }
   .section-link-list-team {
     column-gap: 24px;
@@ -738,6 +778,9 @@ p {
   .hero-list-flooter {
     display: inline-block;
     margin-left: 24px;
+  }
+  .input-flooter-wrapper {
+    width: 264px;
   }
   .text-flooter-icon {
     margin-top: 0;
@@ -1058,13 +1101,16 @@ p {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .list-mobile-menu-contakta {
+    margin-bottom: 24px;
+  }
   .list-mobile-nav-menu {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .link-list-mobile-nav-menu:focus,
@@ -1124,7 +1170,13 @@ p {
   }
 
   .link-list-mobile-menu-contakt {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
     color: #434455;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
   }
   .list-mobile-menu-contakt {
     font-family: "Roboto", sans-serif;
@@ -1132,15 +1184,28 @@ p {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-list-mobile-nav-menu-studio {
+    font-family: "Roboto", sans-serif;
+    color: #404bbf;
+  }
+  .link-list-mobile-menu-contakt-tel {
+    font-family: "Roboto", sans-serif;
+    color: #404bbf;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
   }
   .link-list-mobile-menu-contakt:hover,
   .link-list-mobile-menu-contakt:focus {
     color: #404bbf;
   }
   .mobile-menu-contakt {
-    padding-bottom: 48px;
+    margin-bottom: 48px;
   }
   .mobile-menu-icons {
     display: inline-flex;
